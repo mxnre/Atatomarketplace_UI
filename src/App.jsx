@@ -20,6 +20,9 @@ import "./style.css";
 const { Header } = Layout;
 
 const styles = {
+  textname :{
+    color : "rgb(255 0 0)",
+  },
   content: {
     display: "flex",
     justifyContent: "center",
@@ -61,6 +64,8 @@ const App = () => {
   }, [isAuthenticated, isWeb3Enabled]);
 
   return (
+    <div>
+    <div style ={styles.textname}><h1>Ken Suzuki-ATATO TEST</h1></div> 
     <Layout style={{ height: "100vh", overflow: "auto" }}>
       <Router>
         <Header style={styles.header}>
@@ -93,6 +98,7 @@ const App = () => {
         </div>
       </Router>
     </Layout>
+    </div>
   );
 };
 
